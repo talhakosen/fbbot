@@ -1,6 +1,6 @@
 {
-    "appSecret": "",
-    "pageAccessToken": "",
-    "validationToken": "",
-    "serverURL": ""
+    "appSecret": "8e627d23e9f4596d04f5ab855168320b",
+    "pageAccessToken": "EAAPxIQa4rxEBAKYXQw5VbzZCMW4lv5dj8whWfP8Bi74ub4vxiOnVQafYk4g0HPwmoTAH535DhomUGjHf5Vkcks2oxo4CeoIbdHIUjMMZAJ6zD9KcsZAFgr8jVUFwyhx9U7ZACJXLtsQ6dayZBdhWClxz5ZAVohkrcqSDZAaUgg53QZDZD",
+    "validationToken": "token",
+    "serverURL": "https://mysterious-castle-69913.herokuapp.com/"
 }
