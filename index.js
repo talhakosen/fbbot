@@ -20,7 +20,7 @@ app.get('/', function (req, res) {
 
 // for Facebook verification
 app.get('/webhook/', function (req, res) {
-    if (req.query['hub.verify_token'] === 'my_voice_is_my_password_verify_me') {
+    if (req.query['hub.verify_token'] === 'EAAPxIQa4rxEBAKYXQw5VbzZCMW4lv5dj8whWfP8Bi74ub4vxiOnVQafYk4g0HPwmoTAH535DhomUGjHf5Vkcks2oxo4CeoIbdHIUjMMZAJ6zD9KcsZAFgr8jVUFwyhx9U7ZACJXLtsQ6dayZBdhWClxz5ZAVohkrcqSDZAaUgg53QZDZD') {
         res.send(req.query['hub.challenge'])
     }
     res.send('Error, wrong token')
