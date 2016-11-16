@@ -58,15 +58,14 @@ if (!(APP_SECRET && PAGE_ACCESS_TOKEN && SERVER_URL)) {
  *
  */
 app.get('/webhook', function(req, res) {
-  if (req.query['hub.mode'] === 'subscribe' &&
-      req.query['hub.verify_token'] === 'fb_test_token') {
+  if (req.query['hub.mode'] === 'subscribe' && req.query['hub.verify_token'] === 'fb_test_token') {
     console.log("Validating webhook");
-    
-    System.out.println(req.query['hub.challenge']);
-    res.status(200).send(req.query['hub.challenge']);
+    console.log(req.query['hub.challenge']);
+
+    //res.status(200).send(req.query['hub.challenge']);
   } else {
     console.error("Failed validation. Make sure the validation tokens match.");
-    res.sendStatus(403);          
+    //res.sendStatus(403);          
   }  
 });
 
